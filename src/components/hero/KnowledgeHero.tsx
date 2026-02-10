@@ -314,7 +314,7 @@ export function KnowledgeHero() {
         {/* Bottom badge */}
         <g filter="url(#glow-sm)" className="animate-float" style={{ animationDelay: "2s" }}>
           <rect x="152" y="340" rx="10" ry="10" width="96" height="28" fill="#0f172a" stroke="#f59e0b" strokeWidth="0.8" opacity="0.8" />
-          <text x="200" y="353" textAnchor="middle" fill="#fbbf24" fontSize="8" fontWeight="700">13,000+ Trained</text>
+          <text x="200" y="353" textAnchor="middle" fill="#fbbf24" fontSize="8" fontWeight="700">18,000+ Trained</text>
           <text x="200" y="362" textAnchor="middle" fill="#94a3b8" fontSize="5.5">Professionals</text>
         </g>
 

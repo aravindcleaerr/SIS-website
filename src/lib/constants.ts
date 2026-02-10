@@ -14,21 +14,23 @@ export const SITE_CONFIG = {
 };
 
 export const COMPANY = {
+  motto: "Nurturing Individual's abilities through Sharing & Shaping",
+  belief: "Belief in Basics",
   about:
-    "Saraswati Industrial Services is a premier corporate training, mentoring, and consulting firm dedicated to manufacturing industries. Founded in 2011 by Mr. P.S. Satish, with 39+ years of hands-on industry experience including 23+ years at Robert Bosch, SIS empowers companies and individuals to unlock their full potential through targeted skill development, strategic mentoring, and operational excellence consulting.",
+    "Saraswati Industrial Services is a premier corporate training, mentoring, and consulting firm dedicated to manufacturing industries. Now in its 15th year of service, SIS was founded in 2011 by Mr. P.S. Satish, with 39+ years of hands-on industry experience including 23+ years at Robert Bosch. SIS empowers companies and individuals to unlock their full potential through targeted skill development, strategic mentoring, and operational excellence consulting.",
   heroStats: [
     { value: 39, suffix: "+", label: "Years Experience" },
     { value: 55, suffix: "+", label: "Training Modules" },
-    { value: 13000, suffix: "+", label: "Participants" },
-    { value: 160, suffix: "+", label: "Companies Served" },
+    { value: 18000, suffix: "+", label: "Participants" },
+    { value: 150, suffix: "+", label: "Companies Served" },
   ],
   detailedStats: [
-    { value: 2500, suffix: "+", label: "Hours of Training" },
-    { value: 60000, suffix: "+", label: "Man-Hours Delivered" },
-    { value: 385, suffix: "+", label: "Training Deliveries" },
-    { value: 500, suffix: "+", label: "Online Training Hours" },
-    { value: 40, suffix: "+", label: "Guest Lectures" },
+    { value: 3600, suffix: "+", label: "Hours of Training" },
+    { value: 570, suffix: "+", label: "Training Deliveries" },
+    { value: 500, suffix: "+", label: "Hours of Teaching" },
+    { value: 16, suffix: "+", label: "Companies Mentored" },
     { value: 75, suffix: "+", label: "Articles Published" },
+    { value: 4, suffix: "", label: "Books Published" },
   ],
 };
 
@@ -37,7 +39,7 @@ export const FOUNDER = {
   title: "Founder & Principal Consultant",
   image: "/images/ps-satish.jpg",
   about:
-    "With 39+ years of hands-on industry experience, P.S. Satish is a seasoned corporate trainer, mentor, and management consultant specializing in manufacturing industries. He holds a B.E. (Mechanical) from Mysore University (with rank) and M.Tech from IIT Madras. Having headed the International Purchasing Office at Robert Bosch for 10 years and visited 60-70 Bosch plants across 20+ countries, he brings unparalleled global perspective to his training and consulting practice.",
+    "With 39+ years of hands-on industry experience, P.S. Satish is a seasoned corporate trainer, mentor, and management consultant specializing in manufacturing industries. He holds a B.E. (Mechanical) from Mysore University (with rank) and M.Tech from IIT Madras. Having headed the International Purchasing Office at Robert Bosch for close to 10 years and visited 60+ Bosch plants across 20+ countries, he brings unparalleled global perspective to his training and consulting practice.",
 };
 
 export const SERVICES = [
@@ -45,11 +47,11 @@ export const SERVICES = [
     icon: "GraduationCap" as const,
     title: "Corporate Training",
     description:
-      "55+ training modules across Purchase, Quality, Management, Soft Skills, and Engineering domains. Delivered 385+ training sessions to 13,000+ participants.",
+      "55+ training modules across Purchase, Quality, Management, Soft Skills, and Engineering domains. Delivered 570+ training sessions to 18,000+ participants.",
     items: [
       "55+ customized training modules developed and delivered",
       "Covers Purchase, Quality, Management, Soft Skills & Engineering",
-      "13,000+ participants from 160+ companies trained",
+      "18,000+ participants from 150+ companies trained",
       "Highly interactive approach with real-world case studies",
       "Post-training support and implementation guidance",
     ],
@@ -62,7 +64,7 @@ export const SERVICES = [
     items: [
       "1-to-1 coaching for middle and senior managers",
       "Engineering student mentoring and career guidance",
-      "Supporting 15+ companies as mentor/consultant",
+      "Supporting 16+ companies as mentor/consultant",
       "Mentoring manufacturing companies for holistic growth",
       "Certified Global Mentor by Ipreneur, Bengaluru",
     ],
@@ -76,7 +78,7 @@ export const SERVICES = [
       "Quality improvement and supplier development consulting",
       "Supplier assessment and audit services",
       "Organizational change management",
-      "OFFER Initiative for SME manufacturing companies",
+      "OFFER (Operational Focus For Enhanced Returns) initiative for SMEs",
       "Holistic company growth strategy development",
     ],
   },
@@ -90,7 +92,7 @@ export const SERVICES = [
       "Regular speaker at IIMM, ACMA, CII, IMTMA forums",
       "Engaging talks on leadership, entrepreneurship, and productivity",
       "Published author of 4 books on personal development",
-      "400+ hours of teaching for M.Tech students",
+      "500+ hours of teaching for M.Tech students",
     ],
   },
 ];
@@ -106,7 +108,7 @@ export const WHY_US = [
   },
   {
     icon: "CheckCircle" as const,
-    title: "13,000+ Participants\nTrained Successfully",
+    title: "18,000+ Participants\nTrained Successfully",
   },
   {
     icon: "Wrench" as const,
@@ -120,14 +122,14 @@ export const CAREER = [
     title: "Founder & Principal Consultant",
     org: "Saraswati Industrial Services, Bengaluru",
     description:
-      "Founded SIS to provide corporate training, mentoring, and consulting to manufacturing industries. Developed 55+ training modules, delivered 385+ sessions, and mentored 15+ companies for holistic growth. Published 4 books and 75+ articles in industrial magazines.",
+      "Founded SIS to provide corporate training, mentoring, and consulting to manufacturing industries. Developed 55+ training modules, delivered 570+ sessions to 18,000+ participants, and mentoring 16+ companies for holistic growth. Published 4 books (5th in progress) and 75+ articles in industrial magazines. Launched OFFER initiative for SMEs.",
   },
   {
     period: "2016 – 2021 (5.5 years)",
     title: "Professor of Practice & Visiting Professor",
     org: "Ramaiah University of Applied Sciences, Bengaluru",
     description:
-      "Taught Supply Chain Management, Operations Management, and Product Management in the Mechanical & Engineering Management Department. Delivered 400+ hours of teaching and guided 23+ working professionals for their M.Tech projects.",
+      "Taught Supply Chain Management, Operations Management, and Product Management in the Mechanical & Engineering Management Department. Delivered 500+ hours of teaching and guided 23+ working professionals for their M.Tech projects.",
   },
   {
     period: "2012 – 2016 (4+ years)",
@@ -141,7 +143,7 @@ export const CAREER = [
     title: "Senior Manager – International Purchasing",
     org: "Robert Bosch Group, India & Germany",
     description:
-      "Headed the International Purchasing Office (IPO) for 10 years. Worked 4 years in Germany. Visited 60-70 Bosch plants across 20+ countries. Expanded export purchase volume from USD 8 million to USD 80 million. Developed 25-30 Indian companies for global export.",
+      "Headed the International Purchasing Office (IPO) for close to 10 years. Worked 3+ years in Germany. Visited 60+ Bosch plants across 20+ countries. Expanded export purchase volume from USD 8 million to USD 80 million. Developed 30+ Indian suppliers for global needs.",
   },
 ];
 
@@ -181,26 +183,11 @@ export const OTHER_ROLES = [
   "Editor of industrial magazine 'Industrial Business Mart' (now 'Machine Maker') – 75+ articles published",
   "Member of Advisor Committee for Srinidhi Co-operative Bank, Bengaluru",
   "Industrial Committee Member, FKCCI, Bangalore (2013–2014)",
-  "Supported JETRO in IMTEX-2016 and IMTEX-2020 exhibitions",
+  "Supported JETRO in IMTEX-2016, IMTEX-2020, and IMTEX-2024 exhibitions",
   "Empaneled Consultant at BUS Global Consulting",
   "Worked with M/s Industree, Tokyo, Japan – 6-8 Indo-Japan projects linking Japanese and Indian companies",
-  "Regular speaker at IIMM, ACMA, IIM, CII, IMTMA, ALUCAST forums",
+  "Regular speaker at IIMM, ACMA, IIM, CII, IMTMA, CMTI, ALUCAST forums",
 ];
-
-export const ASSOCIATE = {
-  name: "G. Sridhar",
-  title: "Senior Trainer & Consultant",
-  qualifications: "Six Sigma Master Black Belt, PMP",
-  education: "B.E. (Mechanical)",
-  experience: "35+ years of value-added industrial experience",
-  highlights: [
-    "Filed 6 Patents, authored many quality articles in International Portals & Journals",
-    "Certified auditor for ISO, IATF, AS, CMMI, ISO 14001 & ISO 45001",
-    "Third party source inspector for Tier 1 & 2 companies (Aerospace, Automotive, Medical)",
-    "Liaising for supplier development & sourcing for overseas & local customers",
-    "Membership in ISI, QCFI, CII, ACMA, QCI, ZED, and Academic Institutions",
-  ],
-};
 
 export const TRAINING_MODULES = {
   purchaseSupplyChain: {
@@ -215,7 +202,7 @@ export const TRAINING_MODULES = {
       "Purchase Function Management",
       "Effective Ways to Audit Suppliers",
       "Inventory Management (Direct & Indirect Materials)",
-      "Advanced Purchase Practices",
+      "Best Procurement Practices to Enhance Competitiveness",
       "Introduction to SCM",
       "Introduction to Warehouse/Store Management",
     ],
@@ -228,12 +215,12 @@ export const TRAINING_MODULES = {
       "Problem Solving and 8D Methodology",
       "Quality Assurance Tools (7QC)",
       "5S Methodology",
-      "Cost of Poor Quality – Monitor & Control",
+      "Cost of Poor Quality – Monitor, Control & Reduce",
       "Introduction to DFMEA and PFMEA (VDA-AIAG Edition)",
       "APQP & PPAP Methodology",
       "Quality Circles & Quality Improvement Teams",
       "Effective Handling of Customer Complaints",
-      "Introduction to QMS, EMS and OSHMS Standards",
+      "Introduction to QMS, EMS and OSHA Standards",
       "VDA 6.3 Process Audit",
       "Introduction to TPM",
       "Good Documentation Process (GDP)",
@@ -247,23 +234,29 @@ export const TRAINING_MODULES = {
       "Presentation Skills",
       "Train the Trainer",
       "Communication Skills",
-      "Effective Time Utilization",
+      "Effective Time Management",
       "Change Management",
       "Supervisory Development",
-      "Being an Effective Manager",
+      "Being an Effective Manager / Skills for 1st Time Managers",
       "Entrepreneurship Development",
       "Understanding German Culture",
       "Winning Your Boss",
       "Goal Orientation",
       "Customer Centricity",
-      "Practicing Leadership Daily",
+      "Developing Leadership Skills",
       "Operational Competencies Focus",
       "Being a Professional",
       "Being an Effective Consultant",
       "Enhancing Personal Productivity (Leading Oneself)",
       "Building Organizational Excellence",
       "Unleashing the Power of Focus",
-      "Power of Taking Action",
+      "How Can I Manage My Role Effectively?",
+      "Being Resilient",
+      "Performance Appraisal",
+      "Approach for Success in Sales & Marketing",
+      "Journey from Manager to Leader",
+      "Creativity & Innovation",
+      "The Art of Mentoring",
     ],
   },
   engineering: {
@@ -271,11 +264,9 @@ export const TRAINING_MODULES = {
     icon: "Wrench" as const,
     modules: [
       "Effective New Product Development (NPD) Process",
-      "Value Engineering",
+      "Value Engineering and Value Analysis",
       "Introduction to Lean Management",
-      "Customer Centric Approach",
       "Productivity Improvement Through Waste Elimination",
-      "Approach for Success in Sales & Marketing",
       "Daily Works Management (DWM)",
       "Journey Towards World Class Manufacturing",
       "Introduction to Project Management (Manufacturing Specific)",
@@ -290,9 +281,13 @@ export const TRAINING_MODULES = {
       "SPIRIT for Success in Engineering Studies – For Joining Students",
       "Mantras for Success in Industries (3 Days)",
       "Being a Great Teacher (2 Days)",
+      "Innovation Workshop to Students by Team (2 Days)",
       "E-Mantras to Develop Oneself",
-      "Blueprint for Entrepreneurship (16 Hours)",
+      "Blueprint for Entrepreneurship (16 Hours) – For Startups as Well",
       "Introduction to Manufacturing Industries (40+ Hours)",
+      "Keynote Speaking",
+      "Mentoring Students",
+      "Motivational Talks",
     ],
   },
 };

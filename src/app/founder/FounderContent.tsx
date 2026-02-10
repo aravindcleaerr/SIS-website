@@ -7,7 +7,6 @@ import {
   BadgeCheck,
   GraduationCap,
   Briefcase,
-  Users,
 } from "lucide-react";
 import {
   FOUNDER,
@@ -15,7 +14,6 @@ import {
   EDUCATION,
   CERTIFICATIONS,
   OTHER_ROLES,
-  ASSOCIATE,
 } from "@/lib/constants";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeInView } from "@/components/ui/FadeInView";
@@ -162,47 +160,6 @@ export function FounderContent() {
           </div>
         </FadeInView>
 
-        {/* Associate Profile */}
-        <SectionHeading title="Our Associate" />
-
-        <FadeInView>
-          <div className="bg-sis-navy-light/50 border border-sis-navy-mid/50 rounded-3xl p-8 lg:p-12">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-sis-gold to-sis-gold-dim flex items-center justify-center flex-shrink-0">
-                <Users size={26} className="text-[#0f172a]" />
-              </div>
-              <div>
-                <h3 className="font-[family-name:var(--font-playfair)] text-2xl text-sis-white">
-                  {ASSOCIATE.name}
-                </h3>
-                <p className="text-sis-gold text-sm uppercase tracking-wider mt-1">
-                  {ASSOCIATE.title}
-                </p>
-                <p className="text-sis-blue-light text-sm mt-1">
-                  {ASSOCIATE.qualifications} &bull; {ASSOCIATE.education}
-                </p>
-                <p className="text-sis-gray-400 text-sm mt-1">
-                  {ASSOCIATE.experience}
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
-              {ASSOCIATE.highlights.map((h) => (
-                <div
-                  key={h}
-                  className="flex items-start gap-3 text-sis-gray-400 text-sm"
-                >
-                  <BadgeCheck
-                    size={16}
-                    className="text-sis-gold flex-shrink-0 mt-0.5"
-                  />
-                  {h}
-                </div>
-              ))}
-            </div>
-          </div>
-        </FadeInView>
       </div>
     </main>
   );
