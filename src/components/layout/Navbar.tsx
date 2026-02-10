@@ -13,6 +13,7 @@ export function Navbar() {
 
   return (
     <nav
+      aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-sis-black/80 backdrop-blur-lg border-b border-sis-navy-mid/30"
@@ -20,7 +21,7 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="/">
+        <a href="/" aria-label="Saraswati Industrial Services - Home">
           <Logo size="sm" />
         </a>
 
@@ -44,7 +45,8 @@ export function Navbar() {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="text-sis-gray-400 hover:text-sis-white transition-colors"
-            aria-label="Toggle menu"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -53,7 +55,7 @@ export function Navbar() {
 
       {/* Mobile drawer */}
       {mobileOpen && (
-        <div className="lg:hidden bg-sis-black/95 backdrop-blur-lg border-t border-sis-navy-mid/30">
+        <div role="menu" className="lg:hidden bg-sis-black/95 backdrop-blur-lg border-t border-sis-navy-mid/30">
           <div className="px-6 py-4 flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <a

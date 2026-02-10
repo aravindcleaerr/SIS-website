@@ -56,9 +56,12 @@ export default function RootLayout({
         className={`${inter.variable} ${playfair.variable} antialiased bg-sis-black text-sis-white`}
       >
         <ThemeProvider>
+          <a href="#main" className="skip-to-main">
+            Skip to main content
+          </a>
           <ScrollProgress />
           <Navbar />
-          {children}
+          <div id="main">{children}</div>
           <Footer />
         </ThemeProvider>
       </body>

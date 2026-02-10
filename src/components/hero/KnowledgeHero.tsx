@@ -29,6 +29,8 @@ export function KnowledgeHero() {
         viewBox="0 0 400 400"
         className="w-full h-full max-w-[400px]"
         xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="Knowledge network visualization showing 7 training domains: Quality, Purchase, Leadership, Engineering, Soft Skills, Strategy, and Mentoring"
       >
         <defs>
           <linearGradient id="hero-gold" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -178,9 +180,9 @@ export function KnowledgeHero() {
                 y={pos.y + 30}
                 textAnchor="middle"
                 fill={isGold ? "#fbbf24" : "#93c5fd"}
-                fontSize="8"
-                fontWeight="500"
-                opacity="0.7"
+                fontSize="9"
+                fontWeight="600"
+                opacity="0.9"
               >
                 {node.label}
               </text>
@@ -300,22 +302,22 @@ export function KnowledgeHero() {
         {/* Top-left badge */}
         <g filter="url(#glow-sm)" className="animate-float" style={{ animationDelay: "0s" }}>
           <rect x="28" y="55" rx="10" ry="10" width="68" height="28" fill="#0f172a" stroke="#f59e0b" strokeWidth="0.8" opacity="0.8" />
-          <text x="62" y="68" textAnchor="middle" fill="#fbbf24" fontSize="8" fontWeight="700">39+ Yrs</text>
-          <text x="62" y="77" textAnchor="middle" fill="#94a3b8" fontSize="5.5">Experience</text>
+          <text x="62" y="68" textAnchor="middle" fill="#fbbf24" fontSize="9" fontWeight="700">39+ Yrs</text>
+          <text x="62" y="78" textAnchor="middle" fill="#e2e8f0" fontSize="6.5">Experience</text>
         </g>
 
         {/* Top-right badge */}
         <g filter="url(#glow-sm)" className="animate-float" style={{ animationDelay: "1s" }}>
           <rect x="305" y="55" rx="10" ry="10" width="68" height="28" fill="#0f172a" stroke="#3b82f6" strokeWidth="0.8" opacity="0.8" />
-          <text x="339" y="68" textAnchor="middle" fill="#93c5fd" fontSize="8" fontWeight="700">55+ Prog</text>
-          <text x="339" y="77" textAnchor="middle" fill="#94a3b8" fontSize="5.5">Modules</text>
+          <text x="339" y="68" textAnchor="middle" fill="#93c5fd" fontSize="9" fontWeight="700">55+ Prog</text>
+          <text x="339" y="78" textAnchor="middle" fill="#e2e8f0" fontSize="6.5">Modules</text>
         </g>
 
         {/* Bottom badge */}
         <g filter="url(#glow-sm)" className="animate-float" style={{ animationDelay: "2s" }}>
           <rect x="152" y="340" rx="10" ry="10" width="96" height="28" fill="#0f172a" stroke="#f59e0b" strokeWidth="0.8" opacity="0.8" />
-          <text x="200" y="353" textAnchor="middle" fill="#fbbf24" fontSize="8" fontWeight="700">18,000+ Trained</text>
-          <text x="200" y="362" textAnchor="middle" fill="#94a3b8" fontSize="5.5">Professionals</text>
+          <text x="200" y="353" textAnchor="middle" fill="#fbbf24" fontSize="9" fontWeight="700">18,000+ Trained</text>
+          <text x="200" y="363" textAnchor="middle" fill="#e2e8f0" fontSize="6.5">Professionals</text>
         </g>
 
         {/* Small orbital decoration dots on middle ring */}

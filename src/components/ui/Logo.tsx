@@ -17,6 +17,8 @@ export function Logo({ size = "sm", className = "" }: LogoProps) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="flex-shrink-0"
+        role="img"
+        aria-label="SIS Logo"
       >
         {/* Outer hexagon */}
         <path
